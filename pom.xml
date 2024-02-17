@@ -16,7 +16,8 @@
 	<description>pix</description>
     <modules>
         <module>execotorpool</module>
-    </modules>
+		<module>kit</module>
+	</modules>
     <properties>
 		<java.version>21</java.version>
 	</properties>
