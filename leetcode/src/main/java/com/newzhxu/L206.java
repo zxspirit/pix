@@ -13,6 +13,7 @@ public class L206 {
         ListNode next;
 
     }
+    // 通过迭代的方式反转链表
     public ListNode reverseList(ListNode head){
         ListNode prev = null;
         ListNode curr = head;
@@ -23,5 +24,15 @@ public class L206 {
             curr = nextTemp;
         }
         return prev;
+    }
+    // 通过递归的方式反转链表
+    public ListNode reverseList2(ListNode head){
+        if(head == null || head.next == null){
+            return head;
+        }
+        ListNode p = reverseList2(head.next);
+        head.next.next = head;
+        head.next = null;
+        return p;
     }
 }
