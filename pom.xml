@@ -19,6 +19,7 @@
 		<module>kit</module>
         <module>autoconfig</module>
         <module>leetcode</module>
+        <module>webfluxlearn</module>
     </modules>
     <properties>
 		<java.version>21</java.version>
